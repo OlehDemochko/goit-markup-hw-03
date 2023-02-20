@@ -20,10 +20,35 @@ body {
 /* header */
 
 .header {
+  position: absolute;
+  width: 1440px;
+  height: 72px;
+  left: 0px;
+  top: 0px;
 }
 .header-nav {
 }
 .header-logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+.header-logo-studio {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2e2f42;
 }
 .header-list {
 }
@@ -49,6 +74,17 @@ body {
 }
 /* SECTION-buttons */
 .main-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 586px;
+  height: 48px;
+  left: 427px;
+  top: 168px;
 }
 .main-button {
   font-family: "Roboto";
