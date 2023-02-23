@@ -1,44 +1,43 @@
 body {
+  font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
-  color: #2e2f42;
 }
-
+:root{
+  --main-title-color:#2e2f42
+  --main-text-color:#434455
+}
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
+.link:hover {
+  color: tomato;
+}
+
+
 .text {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color:var(--main-text-color);
+  text-decoration: none;
 }
 
 /* header */
 .box {
 }
 .header {
-  position: absolute;
-  width: 1440px;
-  height: 72px;
-  left: 0px;
-  top: 0px;
 }
 .header-nav {
 }
 .header-logo {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
@@ -47,12 +46,11 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: #2E2F42;
 }
+
 .header-list {
 }
 .header-item {
@@ -62,7 +60,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+color:var(--main-title-color);
 }
 .header_link:hover {
 }
@@ -82,14 +80,9 @@ body {
 }
 
 .main-button {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.04em;
   color: #4d5ae5;
   cursor: pointer;
@@ -104,8 +97,6 @@ body {
 
 /* Main cards section */
 
-.main-cards {
-}
 .main-list {
 }
 .main-link {
@@ -117,43 +108,121 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: color:var(--main-title-color);;
 }
 .cards-apps {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+   color:var(--main-text-color);
 }
 /* Footer */
-
-.foote-logo {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
+.footer {
+ background: #2E2F42;
 }
 .footer-logo-studio {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: #f4f4fd;
 }
+
 .footer-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
+}
+
+/* IndexHTML */
+
+.hero {
+}
+.hero-text {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  background: #2E2F42;
+}
+.main-butn-index {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+}
+.main-butn-index:hover,
+.main-butn-index:active,
+.main-butn-index:focus {
+  color: #4d5ae5;
+  background: #f4f4fd;
+}
+
+/* Public */
+.public {
+}
+.public-link {
+}
+.public-list {
+  font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em
+color:var(--main-title-color);}
+
+.public-info {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+ color:var(--main-text-color);
+}
+/* What are we doing */
+
+.doing {
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+
+color:var(--main-title-color);;
+}
+.doing-list {
+}
+.complection {
+}
+
+/* Our Team */
+.team {font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+color:var(--main-title-color);;
+
+}
+.team-list {
+}
+.team-list-mans {
+}
+.mans-list {
+  font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color:var(--main-title-color);;
+}
+.working {
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+ color:var(--main-text-color);
 }
