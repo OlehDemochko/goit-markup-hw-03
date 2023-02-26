@@ -1,7 +1,3 @@
-body {
-  font-family: Raleway, sans-serif;
-  font-family: Roboto, sans-serif;
-}
 :root {
   --main-title-color: #2e2f42;
   --main-text-color: #434455;
@@ -11,7 +7,33 @@ body {
   --background-btn: #404bbf;
   --color-logo: #4d5ae5;
   --color-logo-footer: #f4f4fd;
+  --basic-index-margin: 120px;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 156px 0 156px;
+}
+
 .title {
 }
 .list {
@@ -34,9 +56,9 @@ body {
 }
 
 /* header */
-.box {
-}
 .header {
+  padding: 24px 0 24px 0;
+  background-color: antiquewhite;
 }
 .header-nav {
 }
@@ -150,6 +172,7 @@ body {
 /* IndexHTML */
 
 .hero {
+  margin-bottom: var(--basic-index-margin);
 }
 .hero-text {
   font-weight: 700;
@@ -178,6 +201,7 @@ body {
 /* Public */
 
 .public {
+  margin-bottom: var(--basic-index-margin);
 }
 .public-link {
 }
@@ -198,6 +222,9 @@ body {
 }
 /* What are we doing */
 
+.doing-section {
+  margin-bottom: var(--basic-index-margin);
+}
 .doing {
   font-weight: 700;
   font-size: 36px;
@@ -212,6 +239,9 @@ body {
 }
 
 /* Our Team */
+.our-team {
+  margin-bottom: 130px;
+}
 .team {
   font-weight: 700;
   font-size: 36px;
@@ -236,4 +266,14 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+}
+
+/* Customers */
+.customers {
+}
+.cust {
+}
+.customers-list {
+}
+.customers-link {
 }
