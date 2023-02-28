@@ -60,6 +60,7 @@ body {
 
 .header {
   padding: 24px 0 24px 0;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
   display: flex;
@@ -96,11 +97,10 @@ body {
 .header-item {
 }
 .addres {
-  justify-content: space-between;
-  align-items: center;
 }
 .address-list {
   display: flex;
+  margin-left: auto;
 }
 
 .address-link {
@@ -132,15 +132,34 @@ body {
 }
 /* ---hero--- */
 
-.main-menu {
+.container-main {
+}
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 
+.scrolls-buttons {
+}
+.list-button {
+  justify-content: center;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 72px;
+}
 .main-button {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--color-logo);
   cursor: pointer;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  height: 48px;
+  text-align: center;
+  min-height: 48px;
+  min-width: 69px;
 }
 .main-button:hover,
 .main-button:focus {
@@ -154,10 +173,24 @@ body {
 /* Main cards section */
 
 .main-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .main-link {
+  width: 360px;
+  height: 420px;
+  margin-bottom: 48px;
 }
 .main-image {
+  display: block;
+}
+.cards-item {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 .cards-name {
   font-weight: 500;
@@ -165,6 +198,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
+  margin-bottom: 8px;
 }
 .cards-apps {
   font-weight: 400;
@@ -233,6 +267,7 @@ body {
   min-height: 56px;
   text-align: center;
   border-radius: 4px;
+  border: #4d5ae5;
 }
 .main-butn-index:hover,
 .main-butn-index:active,
@@ -323,12 +358,15 @@ body {
   width: 264px;
   height: 380px;
   background: #ffffff;
-  border: 1px solid #e7e9fc;
-  border-radius: 0px 0px 4px 4px;
 }
 .team-item-container {
-  margin-bottom: 32px;
-  margin-top: 32px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  border: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  border-top: none;
 }
 
 .team-title {
@@ -347,6 +385,7 @@ body {
   text-align: center;
 }
 .team-img {
+  display: block;
 }
 
 /* Customers
@@ -365,12 +404,9 @@ body {
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
+  background: var(--box-background);
 }
 .container-footer {
-  background: var(--box-background);
-  width: 1158px;
-}
-.footer-text-position {
 }
 
 .footer-logo-studio {
@@ -383,6 +419,9 @@ body {
 }
 
 .footer-index-text {
+  display: block;
+  width: 264px;
+  margin-top: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
