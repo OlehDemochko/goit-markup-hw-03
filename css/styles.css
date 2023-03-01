@@ -68,7 +68,6 @@ body {
 }
 .header-nav {
   display: flex;
-  padding-right: 332px;
 }
 .header-logo {
   font-family: Raleway;
@@ -97,10 +96,10 @@ body {
 .header-item {
 }
 .addres {
+  margin-left: auto;
 }
 .address-list {
   display: flex;
-  margin-left: auto;
 }
 
 .address-link {
@@ -136,7 +135,7 @@ body {
 }
 .portfolio {
   padding-top: 96px;
-  padding-bottom: 72px;
+  padding-bottom: 120px;
 }
 
 .scrolls-buttons {
@@ -156,10 +155,9 @@ body {
   cursor: pointer;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  height: 48px;
+  align-items: center;
   text-align: center;
-  min-height: 48px;
-  min-width: 69px;
+  padding: 12px 24px;
 }
 .main-button:hover,
 .main-button:focus {
@@ -175,12 +173,11 @@ body {
 .main-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
 }
 .main-link {
   width: 360px;
   height: 420px;
-  margin-bottom: 48px;
 }
 .main-image {
   display: block;
@@ -229,13 +226,13 @@ body {
 }
 
 /* -------_____=====IndexHTML =====_____-------*/
-
-.hero {
-  margin-bottom: var(--basic-index-margin);
+.section {
+  /* padding-top: 120px; */
+  padding-bottom: 120px;
 }
+
 .container-hero {
   width: auto;
-  height: 600px;
   background: var(--box-background);
   margin: 0 auto;
   padding-top: 188px;
@@ -278,9 +275,6 @@ body {
 
 /* Public */
 
-.public {
-  margin-bottom: var(--basic-index-margin);
-}
 .public-link {
   /* display: inline-block;
   width: 264px;
@@ -291,13 +285,15 @@ body {
   gap: 12px;
   width: 1128px;
   margin: 0 auto;
+  padding-top: 120px;
 }
 .public-list-name {
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .public-info {
@@ -309,34 +305,35 @@ body {
 }
 /* What are we doing */
 
-.doing-section {
-  margin-bottom: var(--basic-index-margin);
-}
 .doing {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
   text-align: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .doing-list {
   display: flex;
   gap: 24px;
+}
+.img-doing {
+  display: block;
 }
 .complection {
 }
 
 /* Our Team */
 .our-team {
+  background: #f4f4fd;
 }
 .container-team {
   display: block;
   width: auto;
-  height: 732px;
-  background: #f4f4fd;
 }
 .team {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -353,7 +350,6 @@ body {
 /* .logo-list {
 } */
 .team-item {
-  padding-bottom: 32px;
   text-align: center;
   width: 264px;
   height: 380px;
@@ -375,6 +371,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-title-color);
   margin-bottom: 8px;
+  font-weight: 500;
 }
 .working {
   font-weight: 400;
