@@ -58,7 +58,7 @@ body {
 
 /* ----------=====----header-----=====----------- */
 
-.header {
+.header-portfolio {
   padding: 24px 0 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
@@ -226,6 +226,10 @@ body {
 }
 
 /* -------_____=====IndexHTML =====_____-------*/
+.header {
+  padding: 24px 0 24px 0;
+  /* border-bottom: 1px solid #e7e9fc; */
+}
 .section {
   /* padding-top: 120px; */
   padding-bottom: 120px;
@@ -233,11 +237,20 @@ body {
 
 .container-hero {
   width: auto;
-  background: var(--box-background);
+  /* background: var(--box-background); */
   margin: 0 auto;
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(45, 47, 66, 0.7),
+      rgba(45, 47, 66, 0.7)
+    ),
+    url(../images/peopleoffice.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1440px;
+  flex-grow: 1;
 }
 
 .hero-text {
@@ -275,17 +288,27 @@ body {
 
 /* Public */
 
-.public-link {
-  /* display: inline-block;
-  width: 264px;
-  gap: 24px; */
-}
 .public-list {
   display: flex;
-  gap: 12px;
-  width: 1128px;
-  margin: 0 auto;
+  gap: 24px;
   padding-top: 120px;
+}
+.public-link {
+}
+.public-icon-link {
+  display: flex;
+  background: #f4f4fd;
+  border-radius: 4px;
+  height: 112px;
+  width: 264px;
+  margin-bottom: 8px;
+}
+.public-icon {
+  padding: 24px 100px 24px 100px;
+}
+.public-icon-item {
+}
+.public-list-item {
 }
 .public-list-name {
   font-weight: 500;
@@ -352,17 +375,17 @@ body {
 .team-item {
   text-align: center;
   width: 264px;
-  height: 380px;
+  height: 428px;
   background: #ffffff;
-}
-.team-item-container {
-  padding-bottom: 32px;
-  padding-top: 32px;
   border: 1px solid #e7e9fc;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   border-top: none;
+}
+.team-item-container {
+  margin-bottom: 8px;
+  padding-top: 32px;
 }
 
 .team-title {
@@ -383,6 +406,22 @@ body {
 }
 .team-img {
   display: block;
+}
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.team-social-item {
+}
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.team-social-icon {
 }
 
 /* Customers
